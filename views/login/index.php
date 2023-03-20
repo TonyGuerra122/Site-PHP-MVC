@@ -7,7 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="/Site-PHP-MVC/src/css/login.css">
     <title>Home</title>
 </head>
 <body>
@@ -33,6 +33,6 @@ session_start();
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/login.js"></script>
+    <script src="/Site-PHP-MVC/src/js/login.js"></script>
 </body>
 </html>

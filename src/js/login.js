@@ -9,7 +9,7 @@ $(".box-form").on("submit", (e) =>{
           )
     }else{
         $.ajax({
-            url: "../controllers/callAction.php",
+            url: "/Site-PHP-MVC/controllers/callAction.php",
             type: 'POST',
             data: {
                 action: "Logou",
@@ -19,7 +19,7 @@ $(".box-form").on("submit", (e) =>{
             success: function(data){
                 console.log(data)
                 if(data == true){
-                    location.href = "../index.php"
+                    location.href = "/Site-PHP-MVC/"
                 }else{
                     Swal.fire(
                         'Erro!',

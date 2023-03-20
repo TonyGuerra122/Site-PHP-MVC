@@ -1,9 +1,9 @@
 <?php
 session_start();
 if(!isset($_SESSION['email']) || !isset($_SESSION['senha'])){
-    header("Location: ./views/login.php");
+    header("Location: /Site-PHP-MVC/views/login/");
 }
-include("./models/Usuarios.php");
+include($_SERVER['DOCUMENT_ROOT'] . "/Site-PHP-MVC/models/Usuarios.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,6 +17,6 @@ include("./models/Usuarios.php");
     <button type="button" onclick="deslogar()">Sair</button>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./views/js/index.js"></script>
+    <script src="/Site-PHP-MVC/src/js/index.js"></script>
 </body>
 </html>
